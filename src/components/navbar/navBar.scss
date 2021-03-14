@@ -1,0 +1,28 @@
+@import '../../Style.scss';
+
+$nav-height : 70px;
+$test : 300px;
+
+#top_bar{
+    // background-color: rgb(104, 40, 134);
+    background-color: $first-color;
+    height: $nav-height;
+    width: 100%;
+    color: rgb(255,255,255);
+    font-size: 35px;
+    text-align: center;
+    vertical-align: middle;
+    margin:0px;
+    position: fixed;
+    z-index: 6;
+    // z-index: 2;
+}
+
+// #menuOutlined {
+//     position: fixed;
+//     right: 25px;
+//     z-index: 3;
+//     top:25px;
+//     color: white;
+//     font-size: 20px;
+// }

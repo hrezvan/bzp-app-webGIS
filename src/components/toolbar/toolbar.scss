@@ -1,0 +1,125 @@
+@import '../../Style.scss';
+
+$img-size:25px;
+
+#toolbar {
+    position:fixed;
+    display: flex;
+    flex-direction: column;
+    // height: 200px;
+    width: 35px;
+    z-index: 2;
+    right: 10px;
+    bottom: 100px;
+    // background-color: #ddd;
+    background-color: $background-color;
+    opacity: 0.8;
+    border:2px solid rgba(70, 68, 68, 0.575);
+    border-radius: 3px;
+    justify-content: center;
+ 
+}
+
+@mixin tablet-mode {
+    @media (min-width: 600px) and (max-width: 1024px) {
+        @content;
+    }
+}
+
+@mixin mobile-mode {
+    @media (max-width: 599px) {
+        @content;
+    }
+}
+
+#plus {
+    width: $img-size;
+    height: $img-size;
+}
+
+#minus {
+    width: $img-size;
+    height: $img-size;
+}
+
+#zoom-extent {
+    width: $img-size;
+    height: $img-size;
+    left: 2px;
+}
+
+#brush {
+    // position: fixed;
+    width: $img-size;
+    height: $img-size;
+    // display:none;
+    // right: 15px;
+    // bottom: 330px;
+    // display: none;
+    @include mobile-mode {
+        display: none;
+    }
+}
+
+#brush-icon {
+    @include mobile-mode {
+        display: none;
+    }
+}
+
+#delete {
+    // display:none;
+    // position: fixed;
+    width: $img-size;
+    height: $img-size;
+    // display:none;
+    // right: 15px;
+    // bottom: 290px;
+}
+
+// #delete-icon{
+//     display: none;
+// }
+
+#ruler {
+    // position: fixed;
+    width: $img-size;
+    height: $img-size;
+    // right: 15px;
+    // bottom: 250px;
+}
+
+#area {
+    // position: fixed;
+    width: $img-size;
+    height: $img-size;
+    // right: 15px;
+    // bottom: 210px;
+}
+
+#pin {
+    width: $img-size;
+    height: $img-size;
+}
+
+#printer {
+    // position: fixed;
+    width: $img-size;
+    height: $img-size;
+    // right: 15px;
+    // bottom: 170px;
+    @include mobile-mode {
+        display: none;
+    }
+}
+
+#printer-icon {
+    @include mobile-mode {
+        display: none;
+    }
+
+    @include tablet-mode {
+        display: none;
+    }
+}
+

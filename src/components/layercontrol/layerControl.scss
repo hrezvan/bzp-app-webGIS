@@ -1,0 +1,13 @@
+#layercontrol {
+    position: fixed;
+    z-index: 2;
+    bottom: 28px;
+    right: 10px;
+    border: solid 2px;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    filter: blur(0.5px);
+    filter: brightness(80%)
+
+}

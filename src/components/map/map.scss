@@ -1,0 +1,38 @@
+@import '../navbar/navBar.scss';
+
+.leaflet-container {
+    position:absolute;
+    width:100%;
+    height: calc(100% - #{$nav-height});
+    top: $nav-height;
+    z-index: 1;
+}
+
+// #sider {
+//     height: 10px;
+//     width: 20px;
+// }
+
+.leaflet-control-measure {
+    display:none;
+}
+
+#polyline-measure-control {
+    display:none;
+}
+
+.polyline-measure-unicode-icon.polyline-measure-clearControl {
+    display:none;
+}
+
+.polyline-measure-unicode-icon {
+    display:none;
+}
+
+.leaflet-bar {
+    display:none;
+}
+
+.leaflet-draw-draw-polygon leaflet-draw-toolbar-button-enabled {
+    display:none;
+}

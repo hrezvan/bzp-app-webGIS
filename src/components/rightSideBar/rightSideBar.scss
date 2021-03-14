@@ -1,0 +1,17 @@
+@import '../../Style.scss';
+
+#menuOutlined {
+    position: fixed;
+    right: 0px;
+    z-index: 7;
+    top: 10px;
+    color: white;
+    font-size: 20px;
+    background-color: $first-color;
+    border: $first-color;
+}
+
+.content {
+    direction: rtl;
+    text-align: right;
+}

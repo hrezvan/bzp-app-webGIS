@@ -1,0 +1,21 @@
+@import '../../Style.scss';
+@import '../navbar/navBar.scss';
+
+#leftSideButton {
+    position: fixed;
+    left: 0px;
+    z-index: 4;
+    top: 90px;
+    background-color: $third-color;
+    border-color: $third-color;
+    // color: white;
+    // font-size: 20px;
+    // background-color: $first-color;
+    // border: $first-color;
+}
+
+.leftDrawer {
+    direction: rtl;
+    text-align: right;
+    padding-top: $nav-height;
+}

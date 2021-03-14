@@ -1,0 +1,12 @@
+@import '../../Style.scss';
+
+.btn-primary {
+    background-color: $third-color;
+    border-color: $third-color;
+}
+
+.btn-primary:hover {
+    color: rgb(255, 255, 255);
+    background-color: $second-color;
+    border-color: black;
+}
