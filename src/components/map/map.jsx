@@ -183,7 +183,7 @@ class Map extends Component {
         // document.getElementsByClassName('js-deletemarkup deletemarkup')[0].click();
         document.getElementsByClassName('polyline-measure-unicode-icon polyline-measure-clearControl')[0].click();
         var mymap=this.state.map;
-        // mymap.removeLayer();
+        // mymap.removeLayer(markers);
         // mymap.eachLayer(function (groupMarker) {
         //     mymap.removeLayer(groupMarker)
         // }); 
@@ -289,7 +289,7 @@ class Map extends Component {
      
         mymap.eachLayer(l=>{
             // l.remove();
-            console.log(l.clearLayer());
+            console.log(l);
         })
         // Layer Control
         this.props.MapType=='OSM' ? OSM.addTo(mymap) : Satellite.addTo(mymap);
@@ -304,7 +304,8 @@ class Map extends Component {
             var markers=L.marker([lat[1],long[0]] , {icon: pinIcon}) //.addTo(mymap);    
             // var layerGroup = L.layerGroup([markers])
             // layerGroup.addTo(mymap);
-            markers.addTo(groupMarker)
+            // markers.addTo(groupMarker)
+            mymap.addLayer(markers);
             });
             } else{
             mymap.off('click')
@@ -331,7 +332,7 @@ class Map extends Component {
                 onDelete={this.handleDelete}
                 onPrint={this.handlePrint}
                 />
-                {/* <LeftSideBar id='sider' onShowDrawer={this.showDrawer} onCloseDrawer={this.closeDrawer} visible={this.state.visible} placement={this.state.placement} /> */}
+                <LeftSideBar id='sider' onShowDrawer={this.showDrawer} onCloseDrawer={this.closeDrawer} visible={this.state.visible} placement={this.state.placement} />
             </div>
 
             // <MapContainer center={[35.68,51.38]} zoom={11} scrollWheelZoom={true} zoomControl={false}>

@@ -10,9 +10,10 @@ const EnterBtn = () => {
                 <button
                 type='button'
                 className='btn btn-primary'
+                id='enter'
                 onClick={() => { history.push('/map') }}
                 >
-                برو به نقشه
+                Login
                 </button>
             </div>
         )} />

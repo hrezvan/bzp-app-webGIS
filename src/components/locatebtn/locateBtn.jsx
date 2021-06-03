@@ -28,7 +28,7 @@ export default function LocateBTN() {
   return (
     <div id='locatebtn'>
       <ColorButton variant="contained" color="primary" className={classes.margin}>
-        Something
+        تعیین موقعیت
       </ColorButton>
     </div>
   );

@@ -1,22 +1,19 @@
 import React, { Component } from 'react';
 import Navbar from '../components/navbar/navBar';
-import EnterBtn from '../components/enterbtn/enterBtn';
-import License from '../components/license/license';
-import NormalLoginForm from '../components/loginForm/loginForm';
 import RegistrationForm from '../components/registerForm/registerForm';
+import License from '../components/license/license';
 
-class Homepage extends Component {
+class registerPage extends Component {
+    state = {  }
     render() { 
         return ( 
             <div id='page_container'>
                 <Navbar />
-                {/* <EnterBtn /> */}
-                <NormalLoginForm />
+                <RegistrationForm />
                 <License />
             </div>
-            
         );
     }
 }
  
-export default Homepage;
+export default registerPage;
