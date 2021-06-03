@@ -1,70 +1,43 @@
-# Getting Started with Create React App
+## BZP App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project a Web-GIS app which is developed using react and leflet js.
+leaflet is an open source JavaScript library used to build web mapping applications.
 
-## Available Scripts
+This is a responsiv app and has been connected to the backend for authentication and authorization. the CSS Framework of this app is ant-design(antd).
 
-In the project directory, you can run:
+## Components
 
-### `npm start`
+In the project we have 11 components that each is explained below:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+1. registerForm: the first thing that you face when enter the app, is register form. You fill the form by entering your email, password and name. by clicking register your information will add to the database and you'll enter map page(main page of the app).
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+2. loginForm: next component is loginForm. users that we have their information in database can enter the app by filling the login form with their emaill and password.
 
-### `npm test`
+3. Logout: in this component user can logout from his/her account using auth service.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+4. map: this is the main component of the map page. the map is obtained from leaflet library with two layers. the first layer is Open Street Map(OSM) and the second layer is satellite layer. the map is centered on Tehran. also we have some tools in map:
+   a. Scale bar: this component which is placed in the left down corner of the map, shows the scale of the map based on the zoom level.
+   b. Mouse Current Coordinate: with this tool, user can see the coordinate of the cursor.
 
-### `npm run build`
+Also in the map page we have another components too that has came below:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+5. navBar: this component is implementd in all pages. but there is a different between navbar in map page( /map ) with other pages. in map page, navbar has a hambergur icon on the right side which by clicking on the icon, righ sidebar will pop-up.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+6. locatebtn: this component is used to geolocate user.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+7. license: in this component we have an a tag that declares the developer rights. by clicking this link, BZP's website opens in new tab of browser.
 
-### `npm run eject`
+8. layercontrol: this component is used to change the layer of the map. It is designed with a division with an image in it. when the OSM layer is on, the image of the layer control is satellite image and vice versa, when the satellite layer is on, we have OSM image in the layer control. by clicking the layer control div, layer of the map switches between OSM and satellite layer.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+9. leftSideBar: there is another sidebar on the left side for putting GIS layers that has developed in backend side. in despite of right sidebar, it's not arranged in navbar. there is a button under navbar that when you click, left sidebar will pop-up.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+10. toolbar: in the map page we have a toolbar to have interaction with map. this toolbar has 9 options like:
+    a. Zoom in: by clicking this tool, you can zoom in.
+    b. Zoom out: by clicking this tool, you can zoom out.
+    c. Zoom extent: by clicking this tool, you can replace on the initial zoom extent.
+    d. Identify: by clicking this tool, you can identify map objects.
+    e. Delete: by clicking this tool, you can delete drawn items.
+    f. Distance Measurement: by clicking this tool, you can measure distance between multiple points.
+    g. Area Measurments: by clicking this tool, you can measure Area of a polygon with hectar unit.
+    h. Pin: by clicking this tool, you can pin your desired points.
+    i. Print: by clicking this tool, you can print the map page in portrait view.
