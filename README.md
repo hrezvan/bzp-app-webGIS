@@ -3,7 +3,7 @@
 This project a Web-GIS app which is developed using react and leflet js.
 leaflet is an open source JavaScript library used to build web mapping applications.
 
-This is a responsiv app and has been connected to the backend for authentication and authorization. the CSS Framework of this app is ant-design(antd).
+This is a responsive app and has been connected to the backend for authentication and authorization. the CSS Framework of this app is ant-design (antd).
 
 ## Components
 
